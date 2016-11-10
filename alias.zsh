@@ -1,3 +1,4 @@
+alias count='gawk "END{ print NR }"'
 alias h='history -i'
 alias ll='ls -lFh'
 alias la='ls -alFh'
