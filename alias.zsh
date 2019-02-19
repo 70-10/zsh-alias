@@ -5,7 +5,12 @@ alias du='du -h'
 
 alias h='history -i'
 
-alias ls='ls -G'
+if type exa > /dev/null 2>&1; then
+  alias ls='exa'
+else
+  alias ls='ls -G'
+fi
+
 alias ll='ls -lFh'
 alias la='ls -alFh'
 alias l='ls -CF'
