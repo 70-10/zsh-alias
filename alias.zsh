@@ -14,3 +14,9 @@ fi
 alias ll='ls -lFh'
 alias la='ls -alFh'
 alias l='ls -CF'
+
+if [[ -x `which colordiff` ]]; then
+  alias diff='colordiff -u'
+else
+  alias diff='diff -u'
+fi
